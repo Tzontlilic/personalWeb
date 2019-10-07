@@ -1,0 +1,181 @@
+body{
+}
+#father{
+	height:auto;
+	width:auto;
+	align:center;
+	float:left;
+}
+#weblogo  {
+	height: 60px;
+	width:  90px;
+	float:left;
+}
+#headimg{ 
+	background:url(../img/headimg.png);
+	background-size: 100% 100%;
+	width: 950px;
+	height: 60px;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+}
+#loginPart{ 
+
+	width:350px;
+	height:60px;
+	float:right;
+}
+#login{
+
+	background-color: #5e758f;
+	border-radius: 25px;
+	border:1px solid green;
+	width:80px;
+	height:40px;
+	line-height:40px;
+	margin-left: 30px;
+	margin-top: 10px;
+	float:left;
+	text-align:center;
+}
+#logging{ 
+	border-radius:30px;	
+	margin-top:30px;
+	height:500px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	float:left;
+}
+
+#logging> div{
+	border: 1px dashed #5e758f;
+	border-radius:30px;	
+	height:480px;
+	width:60%;
+	margin-top:30px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom:30px;
+	float:left;
+	text-align:center;
+}
+#registing{	
+	border-radius:30px;	
+	margin-top:30px;
+	height:600px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	float:left;
+}
+#registing> div{
+	border: 1px dashed #5e758f;
+	border-radius:30px;	
+	height:550px;
+	width:60%;
+	margin-top:30px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom:30px;
+	float:left;
+	text-align:center;
+}
+input{
+  box-sizing: border-box;
+  text-align:center;
+  font-size:1.4em;
+  width:30%;
+  height:40px;
+  border-radius:4px;
+  border:1px solid #c8cccf;
+  color:#6a6f77;
+  text-decoration:none;
+  width:30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+input[type="submit"]{
+	background-color: #71a364;
+	color: white;
+	text-align:center;
+}
+#regist{ 
+
+	background-color: #5e758f;
+	border-radius: 25px;
+	border: 1px solid green;
+	width:80px;
+	height:40px;
+	line-height:40px;
+	margin-left: 30px;
+	margin-top: 10px;
+	float:left;
+	text-align:center;
+}
+#logout{ 
+	background-color: #5e758f;
+	border-radius:25px;
+	border: 1px solid green;
+	width:80px;
+	height:40px;
+	line-height:40px;
+	margin-left: 30px;
+	margin-top: 10px;
+	float:left;
+	text-align:center;
+}
+#leader{
+	border:1px solid #cbb3db;
+	height: 50px;
+	width: 100%;
+	float:left;
+	background-color: #67818f;
+}
+
+#leader > div{
+	line-height:50px;
+	height:50px;
+	width:50px;
+	float:left;
+	margin-left: 20px;
+}
+#leader > font{
+	height:40px;
+	line-height:50px;
+}
+#img{ 
+	margin-top:30px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	float:left;
+}
+#friendlink{ 
+	background-color:#1a191a;
+	margin-top: 30px;
+	border:1px solid #72898a;
+	height: 100px;
+	width: 100%;
+	float:left;
+}
+#friendlink > div{
+	width: 48%;
+	height: 80px;
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#copyright{ 
+	height: 30px;
+	width:100%;
+	float:left;
+	background-color: #67818f;
+}
+
+img{
+	max-height:100%;
+	max-width:100%;
+}
