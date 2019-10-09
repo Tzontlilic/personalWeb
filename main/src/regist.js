@@ -1,4 +1,4 @@
-function check(){
+/*function check(){
 	var username = document.getElementById("regist_username").value;
 	var password = document.getElementById("regist_password").value;
 	var re_password = document.getElementById("re_regist_password").value;
@@ -15,7 +15,7 @@ function check(){
 		}	
 	}
 	alert("注册成功");
-}
+}*/
 
 // 写页面加载函数
 $(function(){
@@ -66,5 +66,14 @@ $(function(){
 				});
 			}
 		});
+	});
+
+	// 表单校验
+	$("#regist_from").validate({
+		rules:{
+			regist_username:{
+				required:true	
+			}		
+		}	
 	});
 });

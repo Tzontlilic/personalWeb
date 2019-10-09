@@ -4,6 +4,8 @@
 		<title>Tzontlilic的主站</title>
 		<link href="./style.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="../lib/jquery.min.js"></script>
+		<!--下面这个包用于简便得完成表单校验，其构建在jquery之上，所以要先引用jquery-->
+		<script type="text/javascript" src="../lib/jquery.validate.js"></script>
 		<script type="text/javascript" src="./regist.js"></script>
 	</head>
 	<body>
@@ -61,9 +63,9 @@
 					<font  size="6px">注册</font> <br /> <br /> <br />
 
 					<!--提交表单-->
-					<form method="post" action="#" onSubmit="return check()">
+					<form method="post" action="#" onSubmit="return check()" id="regist_from">
 						<!--用户名-->
-						<input  type="text" id="regist_username" size="18" placeholder="用户名"/>
+						<input  type="text" name="regist_username" id="regist_username" size="18" placeholder="用户名"/>
 						<br />
 						<br />
 						<!--密码-->
