@@ -6,6 +6,8 @@
 		<script type="text/javascript" src="../lib/jquery.min.js"></script>
 		<!--下面这个包用于简便得完成表单校验，其构建在jquery之上，所以要先引用jquery-->
 		<script type="text/javascript" src="../lib/jquery.validate.js"></script>
+		<!--引入国际化-->
+		<script type="text/javascript" src="../lib/messages_zh.js"></script>
 		<script type="text/javascript" src="./regist.js"></script>
 	</head>
 	<body>
@@ -69,11 +71,11 @@
 						<br />
 						<br />
 						<!--密码-->
-						<input type="password" id="regist_password" size="18" placeholder="密码"/>  
+						<input type="password" name="regist_password" id="regist_password" size="18" placeholder="密码"/>  
 						<br />
 						<br />
 						<!--请再输入一遍密码-->
-						<input type="password" id="re_regist_password"size="18" placeholder="确认密码"/>  
+						<input type="password" name="re_regist_password" id="re_regist_password"size="18" placeholder="确认密码"/>;  
 						<br />
 						<br />
 						<!--省选择-->

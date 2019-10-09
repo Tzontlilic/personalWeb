@@ -72,8 +72,39 @@ $(function(){
 	$("#regist_from").validate({
 		rules:{
 			regist_username:{
-				required:true	
-			}		
-		}	
+				required:true, // 此栏必填	
+				minlength: 6, // 最小长度6
+				maxlength: 12 // 最大长度12
+			},
+
+			regist_password:{
+				required:true,
+				minlength: 8,
+				maxlength: 18
+			},
+			
+			re_regist_password:{
+				equalTo: "#regist_password"	
+			}
+
+		},
+		messages:{
+			regist_username:{
+				required:"用户名不能为空", // 此栏必填	
+				minlength:"臭弟弟，不能小于6！", // 最小长度6
+				maxlength:"你是比较长吗？" // 最大长度12
+			},
+
+			regist_password:{
+				required:"放心写吧我不会偷看的",
+				minlength:"这密码这么短我分分钟破解",
+				maxlength:"这么长你记得住？" 
+			},
+			
+			re_regist_password:{
+				equalTo: "密码就忘了？"	
+			}
+		
+		}
 	});
 });

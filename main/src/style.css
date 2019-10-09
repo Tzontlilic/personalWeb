@@ -183,3 +183,7 @@ img{
 	max-height:100%;
 	max-width:100%;
 }
+label.error{
+
+	color:red;
+}
