@@ -82,7 +82,7 @@ body{
 	float:left;
 	text-align:center;
 }
-input{
+input {
   box-sizing: border-box;
   text-align:center;
   font-size:1.4em;
@@ -100,6 +100,10 @@ input[type="submit"]{
 	background-color: #71a364;
 	color: white;
 	text-align:center;
+}
+select{
+	width:20%;
+	height: 30px;
 }
 #regist{ 
 

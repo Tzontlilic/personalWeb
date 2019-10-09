@@ -3,6 +3,7 @@
 	<head>
 		<title>Tzontlilic的主站</title>
 		<link href="./style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="./jquery.min.js"></script>
 		<script type="text/javascript" src="./regist.js"></script>
 	</head>
 	<body>
@@ -64,11 +65,30 @@
 						<!--用户名-->
 						<input  type="text" id="regist_username" size="18" placeholder="用户名"/>
 						<br />
+						<br />
 						<!--密码-->
 						<input type="password" id="regist_password" size="18" placeholder="密码"/>  
 						<br />
+						<br />
 						<!--请再输入一遍密码-->
 						<input type="password" id="re_regist_password"size="18" placeholder="确认密码"/>  
+						<br />
+						<br />
+						<!--省选择-->
+						<font size="4px">所在地：</font>
+						<select id="province">
+							<!--湖南-->
+							<option value="0">湖南</option>
+							<!--湖北-->
+							<option value="1">湖北</option>
+							<!--辽宁-->
+							<option value="2">辽宁</option>
+							<!--广东-->
+							<option value="3">广东</option>
+						</select>
+						<select id="cities">
+						</select>
+						<br />
 						<br />
 						<!--验证码-->
 						<img height="40px" width="30%" src="../img/yzm.jpeg"/>
@@ -76,8 +96,10 @@
 						<!--刷新验证码-->
 						<a href="#">点击刷新验证码</a>
 						<br />
+						<br />
 						<!--输入验证码-->
 						<input type="text" size="8" placeholder="验证码"/>
+						<br />
 						<br />
 						<!--提交按钮-->
 						<input class="submit" type="submit" value="注册">
