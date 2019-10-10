@@ -4,6 +4,10 @@
 		<title>Tzontlilic的主站</title>
 		<link href="./style.css" rel="stylesheet" type="text/css">
 	</head>
+	<!--导入jquery-->	
+	<script type="text/javascript" src="../lib/jquery.min.js"></script>
+	<!--导入validate 注意要先导入jqeury再导入validate-->
+	<script type="text/javascript" src="../lib/jquery.validate.js"></script>
 	<script type="text/javascript" src="./login.js"></script>
 	<body>
 		<div id="father">
@@ -60,13 +64,13 @@
 					<font  size="6px">登陆</font> <br /> <br /> <br />
 
 					<!--提交表单-->
-					<form method="post" action="#" onSubmit="return check()">
+					<form method="post" action="#" id="loginFrom">
 						<!--用户名-->
 						<div>
-							<input onfocus="showTips()" type="text" id="login_username" size="18" placeholder="用户名" /><span id="login_username_tips"></span></div>
+							<input onfocus="showTips()" type="text" name="login_username" id="login_username" size="18" placeholder="用户名" /><span id="login_username_tips"></span></div>
 						<br />
 						<!--密码-->
-						<input type="password" id="login_password" size="18" placeholder="密码"/><span id="login_password_tips"></span>  
+						<input type="password" name="login_password" id="login_password" size="18" placeholder="密码"/><span id="login_password_tips"></span>  
 						<br />
 						<!--验证码图片-->
 						<img height="40px" width="30%" src="../img/yzm.jpeg"/>
