@@ -26,7 +26,7 @@
             <!--表单校验，所以要写jquery-->
             <!--引入bootstrap-->
             <script src="../lib/bootstrap.js"></script>
-            <script src="./index.js"></script>
+            <script src="./regist.js"></script>
 
             <style>
             </style>
@@ -89,21 +89,28 @@
                 </nav>
         
 
-                <!--登陆部分-->
+                <!--注册部分-->
                 <div class="container">
 
-                    <form id="logForm" style="text-align:center"class="form-inline">
+                    <form id="registForm" style="text-align:center"class="form-inline">
                         <!--用户名-->
                         <div class="form-group">
-                            <label class="sr-only" for="login_username">用户名</label>
-                            <input type="text" class="form-control" id="login_username" placeholder="用户名">
+                            <label class="sr-only" for="regist_username">用户名</label>
+                            <input type="text" class="form-control" id="regist_username" placeholder="用户名">
                         </div>
                         <br />
                         <br />
                         <!--密码-->
                         <div class="form-group">
-                            <label class="sr-only" for="login_password">密码</label>
-                            <input type="password" class="form-control" id="login_password" placeholder="请输入密码">
+                            <label class="sr-only" for="regist_password">密码</label>
+                            <input type="password" class="form-control" id="regist_password" placeholder="请输入密码">
+                        </div>
+                        <br />
+                        <br />
+                        <!--重复确认密码-->
+                        <div class="form-group">
+                            <label class="sr-only" for="re_regist_password">确认密码</label>
+                            <input type="password" class="form-control" id="re_regist_password" placeholder="请确认密码">
                         </div>
                         <br />
                         <br />
@@ -121,7 +128,7 @@
                         <br />
                         <br />
                         <!--提交表单-->
-                        <input class="btn btn-success" type="submit" value="登陆" style="width:170px">
+                        <input class="btn btn-success" type="submit" value="注册" style="width:170px">
 
                     </form> 
                 </div>
