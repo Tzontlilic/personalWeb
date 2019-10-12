@@ -1,106 +1,169 @@
-<!Doctype HTML>
-	<!--我又要加上一行-->
-	<!--这是加的另一行噢，试试看-->
-	<!--我会用merge了-->
-	<!--在master上加了一行-->
-<html>
-<html lang="zh-CN">
-	<head>
-		<meta charset="utf-8">
-		<!--设置文档兼容类型，表示使用ie浏览器的最新模式-->
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<!--设置视口的宽度（为设备的理想宽度），页面缩放初始比例值<理想宽度/可见宽度>-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--上述三个标签必须放在最前面-->
+<!DOCTYPE HTML>
+    <html lang="zh-CN">
+        <head>
+            <meta charset="utf-8">
+            <!--设置文档兼容类型，表示使用ie浏览器的最新模式-->
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+            <!--设置视口的宽度（为设备的理想宽度），页面缩放初始比例值<理想宽度/可见宽度>-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--上述三个标签必须放在最前面-->
 
-		<title>Tzontlilic的主站</title>
+            <title>Tzontlilic的主站</title>
 
-		<link href="./style.css" rel="stylesheet" type="text/css"><!--之前自己写的样式表-->
-		<!--引用bootstrap的样式表-->
-		<link href="../lib/bootstrap.css" rel="stylesheet" type="text/css">
-		<script src="../lib/jquery.min.js"></script>
-		<!--引入bootstrap-->
-		<script src="../lib/bootstrap.js"></script>
-		<script src="./index.js"></script>
-	
-	</head>
-	<body>
-		<div class="container"> <!--响应式布局容器-->	
-			<!--网页logo-->
-			<div id="weblogo">
-				<img height="60px" width="90px"  src="../img/logo2.png"/>
-			</div>
+            <!--<link href="./style.css" rel="stylesheet" type="text/css">--><!--之前自己写的样式表-->
+            <!--引用bootstrap的样式表-->
+            <link href="../lib/bootstrap.css" rel="stylesheet" type="text/css">
+            <script src="../lib/jquery.min.js"></script>
+            <!--引入bootstrap-->
+            <script src="../lib/bootstrap.js"></script>
+            <script src="./index.js"></script>
 
-			<!--额头图片-->
-			<div id="headimg" >
-				<img class="img-rounded" src="../img/headimg.png">		
-			</div>
+            <style>
+            </style>
+        </head>
+        <body>
+            <div class="container"> <!--响应式布局容器-->	
 
-			<!--登陆超链接部分-->
-			<div id="loginPart">
-				<div id="login">
-					<a href="./login.html"><font color="white">登陆</font></a>	
-				</div>
-				<div id="regist">
-					<a href="./regist.html"><font color="white">注册</font></a>
-				</div>
-				<div id="logout">
-					<a href="#"><font color="white">注销</font></a>
-				</div>
-			</div>
 
-			<!--导航栏-->
-			<div id="leader">
-				<div>
-					<a href="./index.html"><font color="white">首页</font></a>
-				</div>
-				
-				<div>
-					<a href="#"><font color="white">发霉啦</font></a>
-				</div>
+                <!--导航栏-->
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="./index.html">Tzontlilic的主站</a>
+                        </div>
 
-				<div>
-					<a href="#"><font color="white">博客</font></a>
-				</div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">发霉啦 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">摸鱼啊</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">选择要干的事情吧<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://www.bilibili.com">看会动漫</a></li>
+                                        <li><a href="https://www.bing.com">搜索点什么</a></li>
+                                        <li><a href="https://www.github.com/Tzontlilic/">Github</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="./love.html">嘿嘿嘿</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">提交</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="./login.html">登陆</a>
+                                    <li><a href="./regist.html">注册</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">($我的账号)</a></li>
+                                            <li><a href="#">($我的消息)</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">退出登陆</a></li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
 
-				<div>
-					<a href="#"><font color="white">简历</font></a>
-				</div>
-				
-				<div>
-					<a href="./love.html"><font color="white">love</font></a>
-				</div>
-				
-			</div>
 
-			<!--图片内容-->
-			<div id="img" class="img-rounded">
-				<img  id="index_img" src="../img/background0.jpg"/>
 
-			</div>
-			
-			<!--友情链接-->
-			<div id="friendlink">
-				<div><!--左半边-->
-					<div align="center">
-						<a href="https://www.bilibili.com">
-							<font color="white">哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</font>
-						</a>	
-					</div>
-				</div>
-				
-				<div> <!--右半边-->
 
-				</div>
-				
-			</div>
-			
-			<!--版权部分-->
-			<div id="copyright">
-				<div align="center">
-					<font text-align="center" color="white" size="3px">©️  Copyright Tzontlilic</font>
-				</div>
-			</div>
-		</div><!--容器-->
-	</body>
-</html>
+                <!--轮播图-->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../img/background0.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../img/background1.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../img/background2.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../img/background3.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../img/background4.jpg" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!--巨幕-->
+                <div class="jumbotron">
+                    <h1 class="text-success">Hello, world!</h1>
+                    <p class="text-primary">来发现我吧</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
+
+
+                <!--友情链接部分-->
+                <div class="container">
+                    <div align="center" class="row" >
+                        <ul class="list-inline">
+                            <li><a href="https://www.bilibili.com">bilibili</a></li>
+                            <li><a href="https://www.github.com/Tzontlilic">Github</a></li>
+                            <li><a href="http://jandan.net">煎蛋网</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--版权部分-->
+                <div class="container" >
+                    <div align="center">
+                        <font>©️   Copyrigth Tzontlilic</font>
+                    </div>
+                </div>
+                   
+
+            </div><!--容器-->
+        </body>
+    </html>
