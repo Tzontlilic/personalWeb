@@ -19,17 +19,14 @@
             <!--<link href="./style.css" rel="stylesheet" type="text/css">--><!--之前自己写的样式表-->
             <!--引用bootstrap的样式表-->
             <link href="../lib/bootstrap.css" rel="stylesheet" type="text/css">
-            <script src="../lib/jquery.min.js"></script>
+            <script type="text/javascript" src="../lib/jquery.min.js"></script>
             <!--因为要进行表单校验，所以引用validate-->
-            <script src="../lib/jquery.validate.js"></script>
-            <script src="../lib/messages_zh.js"></script>
+            <script type="text/javascript" src="../lib/jquery.validate.js"></script>
+            <script type="text/javascript" src="../lib/messages_zh.js"></script>
             <!--表单校验，所以要写jquery-->
             <!--引入bootstrap-->
-            <script src="../lib/bootstrap.js"></script>
-            <script src="./regist.js"></script>
-
-            <style>
-            </style>
+            <script type="text/javascript" src="../lib/bootstrap.js"></script>
+            <script type="text/javascript" src="./regist.js"></script>
         </head>
         <body>
             <div class="container"> <!--响应式布局容器-->	
@@ -96,21 +93,21 @@
                         <!--用户名-->
                         <div class="form-group">
                             <label class="sr-only" for="regist_username">用户名</label>
-                            <input type="text" class="form-control" id="regist_username" placeholder="用户名">
+                            <input type="text" class="form-control" name="regist_username" placeholder="用户名">
                         </div>
                         <br />
                         <br />
                         <!--密码-->
                         <div class="form-group">
                             <label class="sr-only" for="regist_password">密码</label>
-                            <input type="password" class="form-control" id="regist_password" placeholder="请输入密码">
+                            <input type="password" class="form-control" name="regist_password" placeholder="请输入密码">
                         </div>
                         <br />
                         <br />
                         <!--重复确认密码-->
                         <div class="form-group">
                             <label class="sr-only" for="re_regist_password">确认密码</label>
-                            <input type="password" class="form-control" id="re_regist_password" placeholder="请确认密码">
+                            <input type="password" class="form-control" name="re_regist_password" placeholder="请确认密码">
                         </div>
                         <br />
                         <br />
@@ -123,7 +120,7 @@
                         <!--验证码输入框-->
                         <div class="form-group">
                             <label class="sr-only" for="login_yzm">验证码</label>
-                            <input type="password" class="form-control" id="login_yzm" placeholder="请输入验证码">
+                            <input type="password" class="form-control" name="login_yzm" placeholder="请输入验证码">
                         </div>
                         <br />
                         <br />
