@@ -20,6 +20,10 @@
             <!--引用bootstrap的样式表-->
             <link href="../lib/bootstrap.css" rel="stylesheet" type="text/css">
             <script src="../lib/jquery.min.js"></script>
+            <!--因为要进行表单校验，所以引用validate-->
+            <script src="../lib/jquery.validate.js"></script>
+            <script src="../lib/messages_zh.js"></script>
+            <!--表单校验，所以要写jquery-->
             <!--引入bootstrap-->
             <script src="../lib/bootstrap.js"></script>
             <script src="./index.js"></script>
@@ -88,19 +92,38 @@
                 <!--登陆部分-->
                 <div class="container">
 
-                    <form style="text-align:center"class="form-inline">
+                    <form id="logForm" style="text-align:center"class="form-inline">
+                        <!--用户名-->
                         <div class="form-group">
-                            <label class="sr-only" for="exampleInputName2">用户名</label>
-                            <input type="text" class="form-control" id="exampleInputName2" placeholder="用户名">
+                            <label class="sr-only" for="login_username">用户名</label>
+                            <input type="text" class="form-control" id="login_username" placeholder="用户名">
                         </div>
                         <br />
                         <br />
+                        <!--密码-->
                         <div class="form-group">
-                            <label class="sr-only" for="exampleInputPassword3">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                            <label class="sr-only" for="login_password">密码</label>
+                            <input type="password" class="form-control" id="login_password" placeholder="Password">
                         </div>
+                        <br />
+                        <br />
+                        <!--验证码-->
+                        <div class="form-group">
+                            <img src="../img/yzm.jpeg" height="50px" width="170px">
+                        </div>
+                        <br />
+                        <br />
+                        <!--验证码输入框-->
+                        <div class="form-group">
+                            <label class="sr-only" for="login_yzm">验证码</label>
+                            <input type="password" class="form-control" id="login_yzm" placeholder="请输入验证码">
+                        </div>
+
                     </form> 
                 </div>
+
+
+
                 <!--友情链接部分-->
                     <div align="center"class="row" style="margin-left:20px">
                         <ul class="list-inline">
